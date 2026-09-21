@@ -1,0 +1,1 @@
+// export const tabMenu = document.querySelectorAll('input[name="menuBtn"]');
