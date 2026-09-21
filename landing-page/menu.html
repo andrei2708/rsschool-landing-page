@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+  <script type="module" src="js/index.js" defer></script>
+  <!-- <script src="js/cards.js" defer></script> -->
+  <link rel="stylesheet" href="style.css">
+  <title>Coffee-House</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <a href="index.html" class="header__logo">
+        <img src="assets/images/icon/logo.svg" alt="logo">
+      </a>
+      <nav class="header__nav">
+        <ul class="navigation-list">
+          <li><a class="text-link link" href="#favorites-coffe">Favorite coffee</a></li>
+          <li><a class="text-link link" href="index.html#about">About</a></li>
+          <li><a class="text-link link" href="index.html#mobile-app">Mobile app</a></li>
+          <li><a class="text-link link" href="#contacts">Contact us</a></li>
+        </ul>
+      </nav>
+      <a href="menu.html" class="header__menu-icon text-link active">Menu<img src="assets/images/icon/coffee-cup.svg"
+          alt="cup"></a>
+      <button class="burger-menu">
+        <span class="line"></span>
+        <span class="line"></span>
+      </button>
+    </header>
+    <main class="main">
+      <div class="main-container">
+        <section class="menu">
+          <h1 class="menu-title title-section">Behind each of our cups hides an <span class="text-accent">amazing
+              surprise</span></h1>
+          <div class="menu__tabs">
+            <input type="radio" name="menuBtn" class="tab-item-menu" id="tab-item-1" checked>
+            <input type="radio" name="menuBtn" class="tab-item-menu" id="tab-item-2">
+            <input type="radio" name="menuBtn" class="tab-item-menu" id="tab-item-3">
+            <label for="tab-item-1" class="option tab-item-1">
+              <img src="assets/images/icon/coffee-icon.png" alt="" class="tab-icon">
+              <span>Coffee</span>
+            </label>
+            <label for="tab-item-2" class="option tab-item-2">
+              <img src="assets/images/icon/tea-icon.png" alt="" class="tab-icon">
+              <span>Tea</span>
+            </label>
+            <label for="tab-item-3" class="option tab-item-3">
+              <img src="assets/images/icon/desert-icon.png" alt="" class="tab-icon">
+              <span>Dessert</span>
+            </label>
+          </div>
+          <div class="menu__container">
+            <!-- <div class="menu-item">
+              <div class="image-container">
+                <img src="assets/images/coffee-1.jpg" alt="" class="image-card">
+              </div>
+              <div class="menu-item__text-container">
+                <h3 class="menu-item__title title-section">Irish coffee</h3>
+                <p class="menu-item__card-text text-section">Fragrant black coffee with Jameson Irish whiskey and
+                  whipped milk</p>
+                <p class="menu-item__price">$7.00</p>
+              </div>
+            </div>
+            <div class="menu-item">
+              <div class="image-container">
+                <img src="assets/images/coffee-2.jpg" alt="" class="image-card">
+              </div>
+              <div class="menu-item__text-container">
+                <h3 class="menu-item__title title-section">Kahlua coffee</h3>
+                <p class="menu-item__card-text text-section">Classic coffee with milk and Kahlua liqueur under a cap of
+                  frothed milk</p>
+                <p class="menu-item__price">$7.00</p>
+              </div>
+            </div>
+            <div class="menu-item">
+              <div class="image-container">
+                <img src="assets/images/coffee-3.jpg" alt="" class="image-card">
+              </div>
+              <div class="menu-item__text-container">
+                <h3 class="menu-item__title title-section">Honey raf</h3>
+                <p class="menu-item__card-text text-section">Espresso with frothed milk, cream and aromatic honey</p>
+                <p class="menu-item__price">$5.50</p>
+              </div>
+            </div>
+            <div class="menu-item">
+              <div class="image-container">
+                <img src="assets/images/coffee-4.jpg" alt="" class="image-card">
+              </div>
+              <div class="menu-item__text-container">
+                <h3 class="menu-item__title title-section">Ice cappuccino</h3>
+                <p class="menu-item__card-text text-section">Cappuccino with soft thick foam in summer version with ice
+                </p>
+                <p class="menu-item__price">$5.00</p>
+              </div>
+            </div>
+            <div class="menu-item">
+              <div class="image-container">
+                <img src="assets/images/coffee-5.jpg" alt="" class="image-card">
+              </div>
+              <div class="menu-item__text-container">
+                <h3 class="menu-item__title title-section">Espresso</h3>
+                <p class="menu-item__card-text text-section">Classic black coffee</p>
+                <p class="menu-item__price">$4.50</p>
+              </div>
+            </div>
+            <div class="menu-item">
+              <div class="image-container">
+                <img src="assets/images/coffee-6.jpg" alt="" class="image-card">
+              </div>
+              <div class="menu-item__text-container">
+                <h3 class="menu-item__title title-section">Latte</h3>
+                <p class="menu-item__card-text text-section">Espresso coffee with the addition of steamed milk and dense
+                  milk foam</p>
+                <p class="menu-item__price">$5.50</p>
+              </div>
+            </div>
+            <div class="menu-item">
+              <div class="image-container">
+                <img src="assets/images/coffee-7.jpg" alt="" class="image-card">
+              </div>
+              <div class="menu-item__text-container">
+                <h3 class="menu-item__title title-section">Latte macchiato</h3>
+                <p class="menu-item__card-text text-section">Espresso with frothed milk and chocolate</p>
+                <p class="menu-item__price">$5.50</p>
+              </div>
+            </div>
+            <div class="menu-item">
+              <div class="image-container">
+                <img src="assets/images/coffee-8.jpg" alt="" class="image-card">
+              </div>
+              <div class="menu-item__text-container">
+                <h3 class="menu-item__title title-section">Coffee with cognac</h3>
+                <p class="menu-item__card-text text-section">Fragrant black coffee with cognac and whipped cream</p>
+                <p class="menu-item__price">$6.50</p>
+              </div>
+            </div> -->
+          </div>
+          <button class="btn-refresh">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M21.8883 13.5C21.1645 18.3113 17.013 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C16.1006 2 19.6248 4.46819 21.1679 8"
+                stroke="#403F3D" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M17 8H21.4C21.7314 8 22 7.73137 22 7.4V3" stroke="#403F3D" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </button>
+        </section>
+      </div>
+    </main>
+    <footer class="footer" id="contacts">
+      <div class="footer__container">
+        <div class="footer-greeting">
+          <h2 class="footer__title title-section">Sip, Savor, Smile. <span class="text-accent">It’s coffee time!</span>
+          </h2>
+          <div class="social-icons">
+            <a class="social-link" href="#">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M23 3.01006C23 3.01006 20.9821 4.20217 19.86 4.54006C19.2577 3.84757 18.4573 3.35675 17.567 3.13398C16.6767 2.91122 15.7395 2.96725 14.8821 3.29451C14.0247 3.62177 13.2884 4.20446 12.773 4.96377C12.2575 5.72309 11.9877 6.62239 12 7.54006V8.54006C10.2426 8.58562 8.50127 8.19587 6.93101 7.4055C5.36074 6.61513 4.01032 5.44869 3 4.01006C3 4.01006 -1 13.0101 8 17.0101C5.94053 18.408 3.48716 19.109 1 19.0101C10 24.0101 21 19.0101 21 7.51006C20.9991 7.23151 20.9723 6.95365 20.92 6.68006C21.9406 5.67355 23 3.01006 23 3.01006Z"
+                  stroke="#E1D4C9" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </a>
+            <a class="social-link" href="#">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z"
+                  stroke="#E1D4C9" stroke-linecap="round" stroke-linejoin="round" />
+                <path
+                  d="M3 16V8C3 5.23858 5.23858 3 8 3H16C18.7614 3 21 5.23858 21 8V16C21 18.7614 18.7614 21 16 21H8C5.23858 21 3 18.7614 3 16Z"
+                  stroke="#E1D4C9" />
+                <path d="M17.5 6.51L17.51 6.49889" stroke="#E1D4C9" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </a>
+            <a class="social-link" href="#">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M17 2H14C12.6739 2 11.4021 2.52678 10.4645 3.46447C9.52678 4.40215 9 5.67392 9 7V10H6V14H9V22H13V14H16L17 10H13V7C13 6.73478 13.1054 6.48043 13.2929 6.29289C13.4804 6.10536 13.7348 6 14 6H17V2Z"
+                  stroke="#E1D4C9" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer_contacts">
+          <h4 class="contacts-title">Contact us</h4>
+          <ul class="contacts">
+            <li><a class="text-link link"
+                href="https://www.google.ru/maps/d/viewer?mid=1KZA28ORszvuBJtYGtkcSSF__p5c&hl=ru&ll=34.10911650790591%2C-118.25803450317386&z=13"
+                target="_blank"><img src="assets/images/icon/pin-alt.svg" alt="">8558 Green Rd., LA</a></li>
+            <li><a class="text-link link" href="tel:+16035550123"><img src="assets/images/icon/phone.svg" alt="">+1 (603)
+                555-0123</a></li>
+            <li>
+              <p class="text-section"><img src="assets/images/icon/clock.svg" alt="">Mon-Sat: 9:00 AM – 23:00 PM</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <div class="popup hidden" id="#popup">
+    <div class="popup__container">
+      <div class="popup__image-container">
+        <img src="assets/images/coffee-1.jpg" alt="" class="popup-image">
+      </div>
+      <div class="popup__container_content">
+        <h2 class="popup-title title-section">Irish coffee</h2>
+        <p class="popup-text text-section">Fragrant black coffee with Jameson Irish whiskey and whipped milk</p>
+        <div class="size-container">
+          <p class="text-section">Size</p>
+          <div class="tabs">
+            <input type="radio" name="size" id="tab-size-1" value="0.00" checked>
+            <input type="radio" name="size" id="tab-size-2" value="0.50">
+            <input type="radio" name="size" id="tab-size-3" value="1.00">  
+            <label for="tab-size-1" class="option tab-size-1">
+              <div class="dot">S</div>
+              <span>200 ml</span>
+            </label>
+            <label for="tab-size-2" class="option tab-size-2">
+              <div class="dot">M</div>
+              <span>300 ml</span>
+            </label>
+            <label for="tab-size-3" class="option tab-size-3">
+              <div class="dot">L</div>
+              <span>400 ml</span>
+            </label> 
+          </div>    
+        </div>
+        <div class="additives-container">
+          <p class="text-section">Additives</p>
+          <div class="tabs">
+            <input type="checkbox" name="additives" id="tab-additives-1">
+            <input type="checkbox" name="additives" id="tab-additives-2">
+            <input type="checkbox" name="additives" id="tab-additives-3">
+            <label for="tab-additives-1" class="option tab-additives-1">
+            <div class="dot">1</div>
+            <span>Sugar</span>
+            </label>
+            <label for="tab-additives-2" class="option tab-additives-2">
+            <div class="dot">2</div>
+            <span>Cinnamon</span>
+            </label>
+            <label for="tab-additives-3" class="option tab-additives-3">
+            <div class="dot">3</div>
+            <span>Syrup</span>
+            </label> 
+          </div>     
+        </div>
+        <div class="total-price">
+          <p>Total:</p>
+          <p class="price" data-price="7">$0.00</p>
+        </div>
+        <div class="alert-container">
+          <img src="assets/images/icon/info-empty.svg" alt="">
+          <p>The cost is not final. Download our mobile app to see the final price and place your order. Earn loyalty points and enjoy your favorite coffee with up to 20% discount.</p>
+        </div>
+        <button class="close-popup">Close</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
