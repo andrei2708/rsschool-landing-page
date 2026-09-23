@@ -167,3 +167,7 @@ function totalPrice(count) {
   price.textContent = `$${total}`;
 }
 
+
+
+btnMoon.addEventListener('click', themeSwitch);
+btnSun.addEventListener('click', themeSwitch);

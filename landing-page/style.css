@@ -56,6 +56,16 @@ p {
   --dark-bg-page: #292826;
 }
 
+.darkstyle {
+  --text-dark: var(--text-light);
+  --background-body: var(--dark-bg-page);
+  --background-container: #403F3D;
+}
+
+body.darkstyle {
+  background: var(--background-body);
+}
+
 .title-section {
   color: var(--text-dark);
   text-align: center;
@@ -99,6 +109,8 @@ p {
     font-size: 3.2rem;
   }
 }
+
+
 
 .wrapper {
   min-height: 100vh;
@@ -205,7 +217,10 @@ p {
   width: 36px;
   height: 36px;
 }
-
+.sun_theme {
+  background-color: transparent;
+  transition: all var(--transition);
+}
 .sun_theme:hover {
   background-color: var(--text-accent);
 }
@@ -232,7 +247,14 @@ p {
 .moon_theme:hover svg path {
   fill: var(--text-light);
 }
-
+.moon_theme.active {
+  background-color: var(--text-accent);
+  transition: all var(--transition);
+}
+.moon_theme.active svg path {
+  fill: var(--text-light);
+  transition: all var(--transition);
+}
 @media (max-width: 769px) {
   .header {
     grid-template: 1fr / 1fr minmax(auto, 535px) minmax(auto, 104px) minmax(auto, 70px) 1fr;
@@ -1353,8 +1375,4 @@ input[name="additives"] {
   font-style: normal;
   font-weight: 600;
   line-height: 150%;
-}
-
-body.dark {
-  background: var(--dark-bg-page);
 }

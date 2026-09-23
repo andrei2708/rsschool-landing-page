@@ -1,19 +1,4 @@
-// "use strict"
-
-// // import {
-// //   openPopup,
-// //   bodyLock
-// // } from './menu.js';
-
-// // import {
-// //   tabMenu,
-// // } from './constants.js';
-
-
-
-
-
-
+"use strict";
 
 // btnRefresh.addEventListener('click', sliceArrCards);
 
@@ -38,16 +23,34 @@
 
 
 
-// const themeBtn = document.querySelectorAll('.theme');
-// const bgBody = document.querySelector('body');
+const btnSun = document.querySelector('.sun_theme');
+const btnMoon = document.querySelector('.moon_theme');
+const bgBody = document.querySelector('body');
 
-// console.log(themeBtn)
+let styleTheme = localStorage.getItem('theme');
+console.log(styleTheme);
 
-// themeBtn.forEach((item) => {
-//   console.log('dark');
-//     item.addEventListener('click', themeSwitch());
-//   });
+btnSun.addEventListener('click', enableDarkStyle());
 
-// function themeSwitch() {
-//   bgBody.classList.add('dark');
+btnMoon.addEventListener('click', disableDarkStyle());
+
+function enableDarkStyle() {
+  bgBody.classList.add('darkstyle');
+  btnMoon.classList.add('active');
+  btnSun.classList.remove('active');
+  localStorage.setItem('theme', 'dark');
+}
+
+function disableDarkStyle() {
+  bgBody.classList.remove('darkstyle');
+  btnMoon.classList.remove('active');
+  btnSun.classList.add('active');
+  localStorage.setItem('theme', null);
+}
+
+// if (styleTheme === 'dark') {
+//   bgBody.classList.add('darkstyle');
+//   btnMoon.classList.add('active');
+//   btnSun.classList.remove('active');
+//   localStorage.setItem('theme', 'dark');
 // }
